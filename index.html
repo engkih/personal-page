@@ -11,60 +11,101 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="">About</a></li>
-                <li><a href="">Tech</a></li>
-                <li><a href="">Project</a></li>
-                <li><a href="">Contact Me!</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <nav class="topnav" id="myTopnav">
+        <a href="#about" class="active">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#techs">Techs</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
     <main>
-        <div class="profile-wrapper">
+        <div class="profile-wrapper" id="about">
             <div class="profilepic-wrapper">
-                <img src="./public/profile-pic.jpg" alt="Achmad Riky Photo">
+                <img src="./public/profile-pic3.png" alt="Achmad Riky Photo">
             </div>
             <div class="about-text">
                 <div>
-                    <h1>Hello !</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. Euismod
-                        lacinia at quis risus sed vulputate odio ut. Adipiscing bibendum est ultricies integer quis.
-                        Dignissim sodales ut eu sem. Amet dictum sit amet justo donec enim diam. Magna etiam tempor orci
-                        eu
-                        lobortis elementum nibh. Nulla pharetra diam sit amet nisl suscipit. Viverra orci sagittis eu
-                        volutpat. Vitae suscipit tellus mauris a diam maecenas. Turpis cursus in hac habitasse platea
-                        dictumst quisque sagittis. Nunc consequat interdum varius sit amet mattis vulputate. Sit amet
-                        est
-                        placerat in egestas erat imperdiet sed euismod. Mauris commodo quis imperdiet massa tincidunt
-                        nunc
-                        pulvinar sapien. Blandit libero volutpat sed cras ornare. Erat nam at lectus urna duis convallis
-                        convallis tellus. Aliquam etiam erat velit scelerisque in dictum non consectetur.</p>
+                    <h1>Hello there !</h1>
+                    <p>Hello there! I'm Achmad Riky, a results-driven and passionate Web Developer and familiar with the
+                        MERN (MongoDB, Express.js, React.js, Node.js) stack. I thrive on turning interesting ideas into
+                        scalable and user-friendly applications. I bring a unique blend of creativity and technical
+                        acumen to every project, backed by 1 years of hands-on experience in software development. My
+                        passion lies in crafting seamless and intuitive user experiences while ensuring robust and
+                        efficient web functionalities.</p>
+                    <p>In the ever-evolving tech landscape, I am committed to staying updated with the latest
+                        advancements. Currently exploring Go-lang to expand my knowledge and experiences in backend
+                        development.</p>
+                    <p>I'm always open to networking and discussing exciting opportunities, whether it's
+                        collaborating on projects, sharing knowledge, or exploring new challenges. Feel free to reach
+                        out for a chat!</p>
                 </div>
                 <div class="social-wrapper">
                     <ul class="social-list">
-                        <li style="color: #b3b3b3"><a href=""><span class="fa-brands fa-github"></span>Github</a></li>
-                        <li><a href=""><span class="fa-brands fa-linkedin"></span>Linkedin</a></li>
-                        <li><a href=""><span class="fa-brands fa-instagram"></span>Instagram</a></li>
-                        <li><a href=""><span class="fa-brands fa-youtube"></span>Youtube</a></li>
+                        <li><a href="https://github.com/engkih" target="_blank"><span
+                                    class="fa-brands fa-github"></span>Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/arikya/" target="_blank"><span
+                                    class="fa-brands fa-linkedin"></span>Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/rikya04/" target="_blank"><span
+                                    class="fa-brands fa-instagram"></span>Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCSrssQG_eFMfi92cKBn7Zcw" target="_blank"><span
+                                    class="fa-brands fa-youtube"></span>Youtube</a></li>
                     </ul>
 
                 </div>
             </div>
         </div>
-        <div class="project-wrapper">
-            <div class="title-wrapper">
-                <h1><span class="fa-solid fa-person-digging"> </span>My Projects<span class="fa-solid fa-person-digging"> </span></h1>
+        <div class="project-wrapper" id="projects">
+            <div class="project-title">
+                <h1><span class="fa-solid fa-person-digging"> </span>My Projects<span
+                        class="fa-solid fa-person-digging"> </span></h1>
             </div>
-            <div class="grid-wrapper">
-
+            <div class="grid-container">
+                <div class="grid-item"><a href="https://ytlib.rikya.my.id/" target="_blank"><img
+                            src="./public/ytlib-logo.PNG" alt="YT Library Logo"></a>
+                    <h3>Youtube Video Library</h3>
+                </div>
+            </div>
+        </div>
+        <div class="tech-wrapper" id="techs">
+            <div class="tech-title">
+                <h1>I Am familiar with</h1>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item"><img src="./public/javascript.png" alt="Javascript Logo">
+                    <h3>Javascript</h3>
+                </div>
+                <div class="grid-item"><img src="./public/nodejs.svg" alt="NodeJS Logo">
+                    <h3>NodeJS</h3>
+                </div>
+                <div class="grid-item"><img src="./public/reactjs.svg" alt="ReactJS Logo">
+                    <h3>ReactJS</h3>
+                </div>
+                <div class="grid-item"><img src="./public/expressjs.svg" alt="ExpressJS Logo">
+                    <h3>ExpressJS</h3>
+                </div>
+                <div class="grid-item"><img src="./public/mongodb.png" alt="MonoDB Logo">
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="grid-item"><img src="./public/tailwind.svg" alt="Tailwind Logo">
+                    <h3>Tailwind</h3>
+                </div>
             </div>
         </div>
     </main>
     <footer></footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
 </body>
 
